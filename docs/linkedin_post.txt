@@ -1,0 +1,33 @@
+HOOK:
+⚡ The grid doesn't know when 200 EVs will plug in tonight. This ML model does.
+
+POST:
+As EV fleet sizes grow, depot charging creates massive, unpredictable load spikes that can destabilize local grids and rack up demand charge fees.
+
+In this project, I built a charging load forecasting system modelled after the Temporal Fusion Transformer (TFT) architecture, using 2 years of hourly simulated fleet charging data with:
+→ 24-hour lag features (autoregressive)
+→ Known covariates: hour of day, day of week
+→ Rolling statistics: 24h mean, 24h std, same-hour-last-week
+
+Results:
+✅ R² = 0.924
+✅ RMSE = 2.84 kW
+✅ Full hour-of-day × day-of-week heatmap for scheduling insight
+
+Real-world use cases:
+🔌 Smart charging scheduling (valley filling)
+🔌 Grid capacity planning
+🔌 V2G (Vehicle-to-Grid) dispatch optimization
+
+📊 The diurnal profile plot alone is a powerful tool for fleet operators.
+
+🔗 Full notebook on GitHub (link in comments)
+
+HASHTAGS:
+#EVCharging #SmartGrid #TimeSeriesForecasting #MachineLearning #FleetManagement #EV #LoadForecasting #V2G #OpenToWork
+
+---
+IMAGE SUGGESTION:
+Use `plots/fig1_*.png` (performance chart) as the main LinkedIn image.
+Optionally combine fig1 + fig4 into a 2-panel image using any image editor.
+Keep image width > 1200px for best display in feed.
